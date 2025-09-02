@@ -1,0 +1,69 @@
+.team-section-design {
+  div {
+    width: 250px;
+    height: 400px;
+   
+    margin-top: 40px;
+    margin: 15px;
+    position: relative;
+
+    img {
+      object-fit: contain;
+      width: 230px;
+      height: 300px;
+      background: $bg-btn;
+      border-radius: 10px;
+    }
+
+    .icon-design {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgb(164, 155, 155);
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      z-index: 2; // above image
+    }
+
+    /* hidden social icons */
+    .social-icons {
+      position: absolute;
+      bottom: 100%; /* appear above the share icon */
+      left: 50%;
+      transform: translateX(-50%) translateY(-10px);
+      background: blue;
+      border-radius: 10px;
+      padding: 10px;
+      width: 40px;
+      height: auto;
+      visibility: hidden;
+      z-index: 3;
+      
+
+      i {
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    }
+
+    /* show on hover */
+    .icon-design:hover .social-icons {
+      display: flex;
+      visibility: visible;
+    }
+
+    i {
+      color: azure;
+      font-size: 20px;
+    }
+
+    p,
+    h4 {
+      text-align: center;
+    }
+  }
+}

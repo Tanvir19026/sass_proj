@@ -1,0 +1,77 @@
+.about-hero-section {
+  max-width: 1400px;
+  min-height: 570px;
+
+  background:$bg-btn; // replace $bg-banner if using SCSS variable
+  margin: 70px;
+
+  h1 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 15px;
+    max-width: 500px;
+  }
+
+  p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    max-width: 500px;
+    margin-bottom: 20px;
+  }
+
+  .icon-section-design {
+    max-width: 460px;
+    min-height: 80px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    
+    
+       
+  }
+
+  .icon-design {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: $bg-btn;
+    
+
+    i {
+      font-size: 28px;
+      color: black;
+    }
+  }
+  .right-content{
+    object-fit: cover;
+    width: 300px;
+    height: 450px;
+    border-radius: 25px;
+  }
+  .right-content-two{
+    object-fit: cover;
+    width: 360px;
+    height: 280px;
+    border-radius: 25px;
+  }
+  .parent-img{
+    position: relative;
+  }
+  .child-img{
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    border:3px solid $bg-arrow;
+      border-radius: 25px;
+  }
+}
